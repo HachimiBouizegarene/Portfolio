@@ -7,6 +7,7 @@ import refonteSite from '../assets/img/refonteSite.PNG'
 import java from "../assets/img/java.jpg"
 import tetris from "../assets/img/tetris.PNG"
 import jeuDeTir from "../assets/img/jeuDeTir.PNG"
+import portfolio from "../assets/img/portfolio.PNG"
 
 
 class Project extends React.Component{
@@ -51,6 +52,11 @@ export const Projects = ()=>{
          img : refonteSite,
          type : 'web',
         lien: "https://github.com/HachimiBouizegarene/SiteGuadeloupe"},
+        {Title : "Portfolio",
+         Description : "C'est le site sur lequel vous vous trouvez actuellement. Ce site a ete realisee avec react et react bootstrap pour le CSS. Grâce à ce projet je sais maintenant creer une application react d'A a Z et maitrise mieux le CSS en utilisant Bootstrap, mais surtout, ce que j'ai appris en réalisant ce site c'est comment le publier, je pensais que ce serait très difficile mais c'est la partie la plus simple.",
+         img : portfolio,
+         type : 'web',
+        lien: "https://github.com/HachimiBouizegarene/Portfolio"},
          {Title : "Tetrice (Console)",
          Description : "Celui-ci est un projet personnel, je l'ai réalisé avec l'aide de vidéos YouTube. C'est un jeu réalisé totalement en C++ sur le logiciel Visual Studio qui tient sur un seul fichier, mais qui imite très bien le jeu Tetris. Ce projet m'a permis d'apprendre certaines notions mathématiques (géométrie).Mais aussi à mieux maitriser les bases du langage C++, qui je pense sont indispensable pour un développeur.",
          img : tetris,

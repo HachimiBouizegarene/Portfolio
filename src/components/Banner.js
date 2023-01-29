@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import {Container, Row, Col} from "react-bootstrap/esm";
 import headerImg from '../assets/img/header-img.png';
-import {ArrowRightCircle} from "react-bootstrap-icons";
 
 export const Banner = ()=>{
     const [loopNum, setLoopNum] = useState (0);
@@ -47,7 +46,6 @@ export const Banner = ()=>{
                         <span className="tagline">Bienvenue sur mon Portfolio</span>
                         <h1>Bonjour je suis Hachimi <span className="wrap">{text=== "" ? <span>&nbsp;</span> : text}</span></h1>
                         <p>Actuellement étudiant en deuxième année de BUT informatique à l'IUT de Paris , je suis à la recherche d'un stage d'une période de 8 à 12 semaine à partir du 3 avril 2023</p>
-                        <button>Accéder à la suite<ArrowRightCircle/></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header img"></img>
