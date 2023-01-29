@@ -8,6 +8,7 @@ import p70 from '../assets/img/70.png'
 import p80 from '../assets/img/80.png'
 import p60 from '../assets/img/60.png'
 import p90 from '../assets/img/90.png'
+import cv from '../assets/img/cv.pdf'
 
 class Item extends React.Component{
     constructor(props){
@@ -41,6 +42,13 @@ export const Skills = ()=>{
         }
       };
 
+    const download= ()=>{
+       const link = document.createElement("a");
+       link.href = cv;
+       link.download = "Bouizegarene Hachimi -CV.pdf";
+       link.click();
+    }
+
     return (
 
         <section className="skill" id="cv">
@@ -59,7 +67,7 @@ export const Skills = ()=>{
                     </Carousel>
                     </Col>
                     <Col>
-                    <Button variant="info">Telecharger CV</Button>{' '}
+                    <Button onClick={download} variant="info">Telecharger CV</Button>{' '}
                     </Col>
                     </div>
                 </Row>
