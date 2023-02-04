@@ -1,0 +1,8 @@
+ {Title : "Tetrice (Console)",
+         Description : "Celui-ci est un projet personnel, je l'ai réalisé avec l'aide de vidéos YouTube. C'est un jeu réalisé totalement en C++ sur le logiciel Visual Studio qui tient sur un seul fichier, mais qui imite très bien le jeu Tetris. Ce projet m'a permis d'apprendre certaines notions mathématiques (géométrie).Mais aussi à mieux maitriser les bases du langage C++, qui je pense sont indispensable pour un développeur.",
+         img : tetris,
+         type : 'application'},
+         {Title : "Jeu de tir",
+         Description : "Celui-ci est aussi un projet personnel, je l'ai réalisé avec l'aide de vidéos YouTube. C'est un jeu réalisé sur le logiciel Unreal Engine.J'ai utilisé un outil intégré au logiciel nommé BluePrint, pour le décrire rapidement, c'est de programmation visuelle basée sur des nœuds.Ce projet m'a permis de passer de Unity à Unreal Engine et je pense c'est une bonne décision si je veux travailler dans le milieu du jeux vidéo",
+         img : jeuDeTir,
+         type : 'application'}

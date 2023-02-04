@@ -18,7 +18,7 @@ export const Footer = ()=>{
                             <a href="https://www.linkedin.com/in/hachimi-bouizegarene-887ab5259/"><img src={navIcon1}></img></a>
                             <a href="https://twitter.com/HachimlI_"><img src={navIcon2}></img></a>
                         </div>
-                        <p>Copyright 2023. All Right Reserved</p>
+                        <p>Copyright 2023. All Rights Reserved</p>
                     </Col>
                 </Row>
             </Container>
