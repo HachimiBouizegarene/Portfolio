@@ -8,7 +8,8 @@ import java from "../assets/img/java.jpg"
 import tetris from "../assets/img/tetris.PNG"
 import jeuDeTir from "../assets/img/jeuDeTir.PNG"
 import portfolio from "../assets/img/portfolio.PNG"
-
+import hex from "../assets/img/hex.jpg"
+import soccerSearch from "../assets/img/soccerSearch.PNG"
 
 class Project extends React.Component{
 
@@ -57,6 +58,16 @@ export const Projects = ()=>{
          img : portfolio,
          type : 'web',
         lien: "https://github.com/HachimiBouizegarene/Portfolio"},
+        {Title : "Hex",
+         Description : "Dans le cadre d'un projet académique, j'ai réalisé ce projet en collaboration avec des camarades de classe. C'est une reproduction du jeu Hex en Java. Le jeu se joue sur la console et permet à deux joueurs de s'affronter, ou alors d'affronter une IA ou même faire une partie IA vs IA. Ce projet est fait en respectant les principes SOLID de java, même si ce n'est pas parfait, ma manière de coder s'est nettement améliorée",
+         img : hex,
+         type : 'application',
+        lien: "https://github.com/HachimiBouizegarene/HexGame"},
+        {Title : "SoccerSearch",
+         Description : "Dans le cadre d'un projet académique , en collaboration avec des camarades de classe, nous avons réalisé ce site qui permet à des clubs de football d'inscrire leur club et ainsi permettre à des utilisateurs de candidater pout intégrer le club. pour ce projet nous avons utilisé php pour gérer base de données associée, php et jQuery(ajax) pour les formulaires, enfin nous avons utilisé l'API leaflet pour afficher la localisation des clubs sur une carte.",
+         img : soccerSearch,
+         type : 'web',
+        lien: "https://github.com/HachimiBouizegarene/SoccerSearch"},
     ]
 
 
