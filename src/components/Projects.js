@@ -29,9 +29,14 @@ class Project extends React.Component{
             <div className="project-description">
                 <p>{this.props.Description}</p>
             </div>
-            <div className="project-button">
-                {this.props.lien ? <Button target="_blank" href={this.props.lien}>Acceder au projet</Button> : <Button variant="danger">Pas encore </Button>}
-            </div>
+            {this.props.site ?  <div className="project-button">
+                { <Button target="_blank" href={this.props.site}>Acceder au site</Button>}
+            </div> : <div className='vide'></div>}
+            {this.props.lien ?  <div className="project-button">
+                { <Button target="_blank" href={this.props.lien}>Acceder au dépôt Git</Button>}
+            </div> : ""}
+            
+
        </div>
   
        
@@ -67,7 +72,8 @@ export const Projects = ()=>{
          Description : "Dans le cadre d'un projet académique , en collaboration avec des camarades de classe, nous avons réalisé ce site qui permet à des clubs de football d'inscrire leur club et ainsi permettre à des utilisateurs de candidater pout intégrer le club. pour ce projet nous avons utilisé php pour gérer base de données associée, php et jQuery(ajax) pour les formulaires, enfin nous avons utilisé l'API leaflet pour afficher la localisation des clubs sur une carte.",
          img : soccerSearch,
          type : 'web',
-        lien: "https://github.com/HachimiBouizegarene/SoccerSearch"},
+        lien: "https://github.com/HachimiBouizegarene/SoccerSearch",
+        site: "https://soccersearch.alwaysdata.net/"},
     ]
 
 
@@ -96,7 +102,7 @@ export const Projects = ()=>{
                                     <Tab.Pane eventKey="Tous">
                                             <Row xs={1} md={2} xl={3} className="g-2 d-flex justify-content-around">
                                             {projects.map((project, index)=>(
-                                                <Project lien={project['lien']} Title={project['Title']} Description={project['Description']} img={project['img']}></Project> 
+                                                <Project site={project['site']} lien={project['lien']} Title={project['Title']} Description={project['Description']} img={project['img']}></Project> 
                                             ))}
                                              </Row>
                                     </Tab.Pane>
@@ -104,7 +110,7 @@ export const Projects = ()=>{
                                         <Row xs={1} md={2} xl={3} className="g-4 d-flex justify-content-around">
                                         {projects.map((project, index)=>(
                                             project['type']=='web'?
-                                            <Project lien={project['lien']} Title={project['Title']} Description={project['Description']} img={project['img']}></Project>: ""
+                                            <Project site={project['site']} lien={project['lien']} Title={project['Title']} Description={project['Description']} img={project['img']}></Project>: ""
                                         ))}
                                         </Row>
                                     </Tab.Pane>
@@ -112,7 +118,7 @@ export const Projects = ()=>{
                                         <Row xs={1} md={2} xl={3} className="g-4 d-flex justify-content-around">
                                         {projects.map((project, index)=>(
                                             project['type']=='application'?
-                                            <Project lien={project['lien']} Title={project['Title']} Description={project['Description']} img={project['img']}></Project>: ""
+                                            <Project site={project['site']} lien={project['lien']} Title={project['Title']} Description={project['Description']} img={project['img']}></Project>: ""
                                         ))}
                                     </Row>
                                     </Tab.Pane>

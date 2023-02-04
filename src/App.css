@@ -443,6 +443,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 280px;
   object-fit: cover;
 }
+ .vide{
+  height: 68.67px;
+}
 
 /************ Projects Css ************/
 .contact {
