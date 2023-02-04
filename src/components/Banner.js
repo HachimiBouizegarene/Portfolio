@@ -4,7 +4,7 @@ import headerImg from '../assets/img/header-img.png';
 
 export const Banner = ()=>{
     const [loopNum, setLoopNum] = useState (0);
-    const toRotate = ["Web-Developper", "UX-Designer", "Web-Designer"];
+    const toRotate = ["Web-Developper", "Java-developer ", "Database-developer"];
     const [text, setText] = useState("");
     const [isDeleting, setIsDeleting] = useState(false);
     const [delta, setDelta] = useState(100);
